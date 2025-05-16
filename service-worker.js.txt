@@ -1,0 +1,88 @@
+const CACHE_NAME = 'fun-learning-cache-v1';
+const urlsToCache = [
+    '/',
+    '/index.html',
+    '/styles.css',
+    '/script.js',
+    '/games/complete-picture.html',
+    '/games/complete-picture.js',
+    '/games/fun-colors.html',
+    '/games/fun-colors.js',
+    '/games/match-letters.html',
+    '/games/match-letters.js',
+    '/games/missing-numbers.html',
+    '/games/missing-numbers.js',
+    '/games/memory-game.html',
+    '/games/memory-game.js',
+    '/assets/audio/background-music.mp3',
+    '/assets/images/puzzle-piece.png',
+    '/assets/images/shadow.png',
+    '/assets/images/colors.png',
+    '/assets/images/shapes.png',
+    '/assets/images/letters.png',
+    '/assets/images/animal.png',
+    '/assets/images/odd-one.png',
+    '/assets/images/size.png',
+    '/assets/images/picture-party.png',
+    '/assets/images/numbers.png',
+    '/assets/images/missing-shapes.png',
+    '/assets/images/witty-letters.png',
+    '/assets/images/differences.png',
+    '/assets/images/count.png',
+    '/assets/images/number-train.png',
+    '/assets/images/color-sorting.png',
+    '/assets/images/shape-builder.png',
+    '/assets/images/animal-match.png',
+    '/assets/images/sound-match.png',
+    '/assets/images/pattern.png',
+    '/assets/images/fruit.png',
+    '/assets/images/letter-trace.png',
+    '/assets/images/shape-sort.png',
+    '/assets/images/number-match.png',
+    '/assets/images/memory.png',
+    '/assets/images/color-match.png',
+    '/assets/images/alphabet.png',
+    '/assets/images/stars.png',
+    '/assets/images/shape-puzzle.png',
+    '/assets/images/animal-sounds.png',
+    '/assets/images/weather.png',
+    '/assets/images/emotion.png',
+    '/assets/images/food.png',
+    '/assets/images/opposites.png',
+    '/assets/images/time.png',
+    '/assets/images/bear.png',
+    '/assets/images/puzzle1.png',
+    '/assets/images/puzzle2.png',
+    '/assets/images/puzzle3.png',
+    '/assets/images/red.png',
+    '/assets/images/blue.png',
+    '/assets/images/green.png',
+    '/assets/images/letter-a.png',
+    '/assets/images/letter-A.png',
+    '/assets/images/letter-b.png',
+    '/assets/images/letter-B.png',
+    '/assets/images/number-1.png',
+    '/assets/images/number-2.png',
+    '/assets/images/number-3.png',
+    '/assets/images/card1.png',
+    '/assets/images/card2.png',
+    '/assets/images/card3.png'
+];
+
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(cache => {
+                return cache.addAll(urlsToCache);
+            })
+    );
+});
+
+self.addEventListener('fetch', event => {
+    event.respondWith(
+        caches.match(event.request)
+            .then(response => {
+                return response || fetch(event.request);
+            })
+    );
+});

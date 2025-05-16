@@ -1,0 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const music = document.getElementById('background-music');
+    const toggleButton = document.getElementById('music-toggle');
+
+    // Play music on load
+    music.play().catch(error => {
+        console.log('Autoplay prevented:', error);
+    });
+
+    toggleButton.addEventListener('click', () => {
+        if (music.paused) {
+            music.play();
+            toggleButton.textContent = 'Toggle Music (On)';
+        } else {
+            music.pause();
+            toggleButton.textContent = 'Toggle Music (Off)';
+        }
+    });
+
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Service Worker registration failed:', error);
+            });
+    }
+});

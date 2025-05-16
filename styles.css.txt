@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Playful Font for Headings */
+.playful-font {
+    font-family: 'Comic Sans MS', 'Chalkduster', sans-serif;
+    color: #ff69b4;
+    text-shadow: 2px 2px #ffd700;
+}
+
+/* Header */
+header {
+    background-color: #87ceeb;
+    border-bottom: 3px solid #ffd700;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #4682b4;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #98fb98;
+    padding: 20px;
+    text-align: center;
+    border-right: 3px solid #ffd700;
+}
+
+.cartoon-character {
+    width: 100px;
+    height: auto;
+}
+
+.welcome-text {
+    font-family: 'Comic Sans MS', 'Chalkduster', sans-serif;
+    color: #ff4500;
+}
+
+/* Game Cards */
+.game-card {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: 'Comic Sans MS', 'Chalkduster', sans-serif;
+    text-align: center;
+    color: #ff69b4;
+}
+
+/* Footer */
+footer {
+    background-color: #87ceeb;
+    border-top: 3px solid #ffd700;
+}
+
+footer a {
+    color: #4682b4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        border-right: none;
+        border-bottom: 3px solid #ffd700;
+    }
+
+    .cartoon-character {
+        width: 80px;
+    }
+
+    .welcome-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Shared Game Page Styles */
+.game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.score {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}

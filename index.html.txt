@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Learning for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-center py-3">
+        <h1 class="playful-font">Fun Learning for Kids</h1>
+        <p class="tagline">30+ Activities for Kids Ages 3 to 5</p>
+        <button id="music-toggle" class="btn btn-primary">Toggle Music (On)</button>
+    </header>
+
+    <!-- Sidebar with Cartoon Character -->
+    <div class="sidebar">
+        <img src="assets/images/bear.png" alt="Smiling Bear" class="cartoon-character">
+        <p class="welcome-text">Hi, little learner! Let's play and learn together!</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Game Cards -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="games/complete-picture.html" class="card game-card">
+                    <img src="assets/images/puzzle-piece.png" class="card-img-top" alt="Complete Picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete Picture</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/shadow.png" class="card-img-top" alt="Shadow Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Shadow Game</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="games/fun-colors.html" class="card game-card">
+                    <img src="assets/images/colors.png" class="card-img-top" alt="Fun Colors">
+                    <div class="card-body">
+                        <h5 class="card-title">Fun Colors</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/shapes.png" class="card-img-top" alt="Super Shapes">
+                    <div class="card-body">
+                        <h5 class="card-title">Super Shapes</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="games/match-letters.html" class="card game-card">
+                    <img src="assets/images/letters.png" class="card-img-top" alt="Match Letters">
+                    <div class="card-body">
+                        <h5 class="card-title">Match Letters</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/animal.png" class="card-img-top" alt="Animal World">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal World</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/odd-one.png" class="card-img-top" alt="Find Odd One">
+                    <div class="card-body">
+                        <h5 class="card-title">Find Odd One</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/size.png" class="card-img-top" alt="Big & Small">
+                    <div class="card-body">
+                        <h5 class="card-title">Big & Small</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/picture-party.png" class="card-img-top" alt="Picture Party">
+                    <div class="card-body">
+                        <h5 class="card-title">Picture Party</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="games/missing-numbers.html" class="card game-card">
+                    <img src="assets/images/numbers.png" class="card-img-top" alt="Missing Numbers">
+                    <div class="card-body">
+                        <h5 class="card-title">Missing Numbers</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/missing-shapes.png" class="card-img-top" alt="Missing Shapes">
+                    <div class="card-body">
+                        <h5 class="card-title">Missing Shapes</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/witty-letters.png" class="card-img-top" alt="Witty Letters">
+                    <div class="card-body">
+                        <h5 class="card-title">Witty Letters</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/differences.png" class="card-img-top" alt="Find Differences">
+                    <div class="card-body">
+                        <h5 class="card-title">Find Differences</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/count.png" class="card-img-top" alt="Magic Count">
+                    <div class="card-body">
+                        <h5 class="card-title">Magic Count</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/number-train.png" class="card-img-top" alt="Number Train">
+                    <div class="card-body">
+                        <h5 class="card-title">Number Train</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/color-sorting.png" class="card-img-top" alt="Color Sorting">
+                    <div class="card-body">
+                        <h5 class="card-title">Color Sorting</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/shape-builder.png" class="card-img-top" alt="Shape Builder">
+                    <div class="card-body">
+                        <h5 class="card-title">Shape Builder</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/animal-match.png" class="card-img-top" alt="Animal Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal Match</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/sound-match.png" class="card-img-top" alt="Sound Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Sound Match</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/pattern.png" class="card-img-top" alt="Pattern Play">
+                    <div class="card-body">
+                        <h5 class="card-title">Pattern Play</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/fruit.png" class="card-img-top" alt="Fruit Count">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruit Count</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/letter-trace.png" class="card-img-top" alt="Letter Trace">
+                    <div class="card-body">
+                        <h5 class="card-title">Letter Trace</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/shape-sort.png" class="card-img-top" alt="Shape Sort">
+                    <div class="card-body">
+                        <h5 class="card-title">Shape Sort</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/number-match.png" class="card-img-top" alt="Number Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Number Match</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="games/memory-game.html" class="card game-card">
+                    <img src="assets/images/memory.png" class="card-img-top" alt="Memory Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Memory Game</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/color-match.png" class="card-img-top" alt="Color Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Color Match</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/alphabet.png" class="card-img-top" alt="Alphabet Song">
+                    <div class="card-body">
+                        <h5 class="card-title">Alphabet Song</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/stars.png" class="card-img-top" alt="Counting Stars">
+                    <div class="card-body">
+                        <h5 class="card-title">Counting Stars</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/shape-puzzle.png" class="card-img-top" alt="Shape Puzzle">
+                    <div class="card-body">
+                        <h5 class="card-title">Shape Puzzle</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/animal-sounds.png" class="card-img-top" alt="Animal Sounds">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal Sounds</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/weather.png" class="card-img-top" alt="Weather Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Match</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/emotion.png" class="card-img-top" alt="Emotion Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Emotion Match</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/food.png" class="card-img-top" alt="Food Sorting">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Sorting</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/opposites.png" class="card-img-top" alt="Opposites Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Opposites Game</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#" class="card game-card">
+                    <img src="assets/images/time.png" class="card-img-top" alt="Time Teller">
+                    <div class="card-body">
+                        <h5 class="card-title">Time Teller</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>Developed by [Your Name]</p>
+        <a href="https://www.montessoriforeveryone.com/" target="_blank">Learn More About Montessori Methods</a>
+    </footer>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
